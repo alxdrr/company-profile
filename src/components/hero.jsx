@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <>
       <div className="Hero bg-secondary">
-        <motion.div layout transition={{ duration: 1 }} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ type: "spring", bounce: 0.5 }} className="copy">
+        <motion.div layout transition={{ duration: 1, type: "spring", bounce: 0.5 }} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="copy">
           <div className="header">
             <h1 className="hero-header text-primary">Inspiring</h1>
             <h1 className="hero-header text-light">Digital Innovation</h1>
