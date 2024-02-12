@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inter:wght@700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,100&display=swap");
+* {
+  font-family: "SATOSHI";
+}
+/* make the customizations */
+$primary: #d64923;
+$secondary: #002029;
+$sucess: #42ff00;
+$warning: #ffe500;
+$danger: #ff0000;
+$light: #ffffff;
+$dark: $secondary;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $sucess,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+/* import bootstrap to set changes */
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.nav-item {
+  color: #ffffff !important;
+  font-weight: 400;
+  font-size: 16px;
+}
+.nav-item.active {
+  font-weight: bolder;
+}
+
+.btn {
+  color: $light !important;
+  border-radius: 30px;
+  padding: 8px 32px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navbar-nav {
+  gap: 28px;
+}
+
+#basic-nav-dropdown {
+  color: #ffffff !important;
+}
+
+nav {
+  padding: 16px 0 !important;
+  height: 12vh;
+}
