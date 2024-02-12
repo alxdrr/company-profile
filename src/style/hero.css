@@ -1,4 +1,4 @@
-@import "../custom.scss";
+@import '../custom.scss';
 
 .Hero {
   height: 88vh;
@@ -15,7 +15,7 @@
   gap: 32px;
 }
 .hero-header {
-  font-size: 96px;
+  font-size: 72px;
   font-weight: 900;
   line-height: normal;
 }

@@ -1,9 +1,9 @@
-import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
-import "../style/footer.css";
-import igLogo from "../assets/igLogo.svg";
-import linkedinLogo from "../assets/linkedinLogo.svg";
-import brand from "../assets/logo.svg";
-import ornament from "../assets/ornament.svg";
+import '../style/footer.css';
+import igLogo from '../assets/igLogo.svg';
+import linkedinLogo from '../assets/linkedinLogo.svg';
+import brand from '../assets/logo.svg';
+import ornament from '../assets/ornament.svg';
+import { motion } from 'framer-motion';
 
 export default function Footer() {
   return (
@@ -14,10 +14,18 @@ export default function Footer() {
             <div className="social d-flex flex-column">
               <h2 className="text-primary navigator">Follow Us</h2>
               <div className="icon d-flex">
-                <a href="http://www.instagram.com/koribarak.technology" target="_blank">
+                <a
+                  href="http://www.instagram.com/koribarak.technology"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={igLogo} alt="instagram logo" />
                 </a>
-                <a href="http://www.linkedin.com/company/koribarak-tech" target="_blank">
+                <a
+                  href="http://www.linkedin.com/company/koribarak-tech"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={linkedinLogo} alt="linkedin logo" />
                 </a>
               </div>
@@ -64,8 +72,20 @@ export default function Footer() {
           </div>
           <img className="footer-ornament" src={ornament} alt="" />
         </div>
-        <div className="divider-line"></div>
-        <p className="copyright text-light">© 2024 Kori Barak Technology, All Rights Reserved.</p>
+        <motion.div
+          animate={{
+            width: ['80%', '100%', '80%'],
+          }}
+          transition={{
+            duration: 10,
+            ease: 'easeInOut',
+            repeat: Infinity,
+          }}
+          className="divider-line"
+        ></motion.div>
+        <p className="copyright text-light">
+          © 2024 Kori Barak Technology, All Rights Reserved.
+        </p>
       </div>
     </>
   );

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inter:wght@700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inter:wght@700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,100&display=swap');
 * {
-  font-family: "SATOSHI";
+  font-family: 'SATOSHI';
 }
 /* make the customizations */
 $primary: #d64923;
@@ -12,18 +12,18 @@ $light: #ffffff;
 $dark: $secondary;
 
 $theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $sucess,
-  "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark,
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $sucess,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
 );
 
 /* import bootstrap to set changes */
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 .nav-item {
   color: #ffffff !important;
