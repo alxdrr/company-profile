@@ -24,7 +24,14 @@ export default function About() {
             provide tailored solutions to meet your unique needs and help you
             achieve your goals.
           </p>
-          <Button variant="primary">Contact Us</Button>{' '}
+          <Button
+            href="https://wa.me/6282138754680"
+            target="_blank"
+            rel="noreferrer"
+            variant="primary"
+          >
+            Contact Us
+          </Button>{' '}
         </motion.div>
         <motion.img
           layout

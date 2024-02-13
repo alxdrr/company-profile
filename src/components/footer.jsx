@@ -4,6 +4,9 @@ import linkedinLogo from '../assets/linkedinLogo.svg';
 import brand from '../assets/logo.svg';
 import ornament from '../assets/ornament.svg';
 import { motion } from 'framer-motion';
+import up from '../assets/icons/arrow-up.svg';
+
+const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
 export default function Footer() {
   return (
@@ -33,10 +36,10 @@ export default function Footer() {
             <div className="explore">
               <h2 className="text-primary navigator">Explore</h2>
               <div className="direct d-flex flex-column">
-                <a href="" className="text-light direct">
+                <a href="#about-us" className="text-light direct">
                   About Us
                 </a>
-                <a href="" className="text-light direct">
+                <a href="#our-services" className="text-light direct">
                   Services
                 </a>
                 <a href="" className="text-light direct">
@@ -47,10 +50,18 @@ export default function Footer() {
             <div className="contacts">
               <h2 className="text-primary navigator">Contact Us</h2>
               <div className="direct d-flex flex-column">
-                <a href="" className="text-light contact">
+                <a
+                  className="text-light contact"
+                  href="https://wa.me/6282138754680"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   +62 821-3875-4680
                 </a>
-                <a href="" className="text-light contact">
+                <a
+                  href="mailto:koribaraktechnology@gmail.com"
+                  className="text-light contact"
+                >
                   koribaraktechnology@gmail.com
                 </a>
               </div>
@@ -58,7 +69,10 @@ export default function Footer() {
             <div className="address">
               <h2 className="text-primary navigator">Address</h2>
               <div className="direct">
-                <a href="" className="text-light office">
+                <a
+                  href="https://www.google.com/maps/place/8%C2%B033'22.0%22S+115%C2%B017'13.8%22E/@-8.556116,115.287157,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-8.556116!4d115.287157?entry=ttu"
+                  className="text-light office"
+                >
                   Jl. Ir. Sutami, Kemenuh, Kabupaten Gianyar, Bali
                 </a>
               </div>
@@ -74,10 +88,10 @@ export default function Footer() {
         </div>
         <motion.div
           animate={{
-            width: ['80%', '100%', '80%'],
+            backgroundColor: ['#fff', '#D64923', '#fff'],
           }}
           transition={{
-            duration: 10,
+            duration: 6,
             ease: 'easeInOut',
             repeat: Infinity,
           }}
@@ -86,6 +100,26 @@ export default function Footer() {
         <p className="copyright text-light">
           © 2024 Kori Barak Technology, All Rights Reserved.
         </p>
+        <motion.img
+          onClick={scrollTop}
+          animate={{
+            scale: [1, 0.9, 1],
+          }}
+          transition={{
+            duration: 2,
+            ease: 'easeInOut',
+            repeat: Infinity,
+          }}
+          style={{
+            filter:
+              'drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.04)) drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.10))',
+            position: 'absolute',
+            bottom: '32px',
+            right: '32px',
+            cursor: 'pointer',
+          }}
+          src={up}
+        />
       </div>
     </>
   );

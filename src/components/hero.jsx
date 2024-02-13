@@ -26,7 +26,9 @@ export default function Hero() {
             successful projects, we are ready to help turn any concept into a
             robust technological solution.
           </p>
-          <Button variant="primary">Consult with our expert for free</Button>{' '}
+          <Button href="#about-us" variant="primary">
+            Dive In
+          </Button>{' '}
         </motion.div>
         <img className="hero-ornament" src={ornament} alt="" />
       </div>

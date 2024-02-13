@@ -26,7 +26,7 @@ export default function NavigationBar() {
               <Nav.Link className="nav-item active" href="#home">
                 Home
               </Nav.Link>
-              <Nav.Link className="nav-item text" href="#about-us">
+              <Nav.Link className="nav-item" href="#about-us">
                 About Us
               </Nav.Link>
               <NavDropdown
@@ -44,12 +44,22 @@ export default function NavigationBar() {
                   System Development
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="nav-item text" href="#link">
+              <Nav.Link className="nav-item" href="#link">
+                Blog
+              </Nav.Link>
+              <Nav.Link className="nav-item" href="#link">
                 FAQ
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <Button variant="primary">Get in touch</Button>{' '}
+          <Button
+            href="https://wa.me/6282138754680"
+            target="_blank"
+            rel="noreferrer"
+            variant="primary"
+          >
+            Get in touch
+          </Button>{' '}
         </Container>
       </Navbar>
     </>

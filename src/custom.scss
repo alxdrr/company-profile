@@ -32,13 +32,18 @@ $theme-colors: (
 }
 .nav-item.active {
   font-weight: bolder;
+  color: #d64923 !important;
+}
+
+.nav-item:hover {
+  color: #d64a23e1 !important;
 }
 
 .btn {
   color: $light !important;
   border-radius: 30px;
-  padding: 8px 32px;
-  font-size: 14px;
+  padding: 10px 40px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -49,8 +54,12 @@ $theme-colors: (
 #basic-nav-dropdown {
   color: #ffffff !important;
 }
+#basic-nav-dropdown:hover {
+  color: #d64a23e1 !important;
+}
 
 nav {
   padding: 16px 0 !important;
-  height: 12vh;
+  padding-top: 24px !important;
+  height: auto;
 }
