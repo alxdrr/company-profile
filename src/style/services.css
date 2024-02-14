@@ -1,9 +1,9 @@
 .services {
   padding: 64px 72px;
   gap: 32px;
-  align-self: stretch;
   background: #ffffff;
   justify-content: center;
+  max-width: 1920px;
 }
 .services-card {
   display: flex;

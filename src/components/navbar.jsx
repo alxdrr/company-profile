@@ -1,4 +1,11 @@
-import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
+import {
+  Navbar,
+  Container,
+  Nav,
+  NavDropdown,
+  Button,
+  Stack,
+} from 'react-bootstrap';
 import logo from '../assets/logo.svg';
 
 export default function NavigationBar() {
@@ -6,9 +13,11 @@ export default function NavigationBar() {
     <>
       <Navbar
         id="NavigationBar"
-        className="bg-secondary d-flex justify-content-center"
+        expand="lg"
+        collapseOnSelect
+        className="bg-secondary"
       >
-        <Container className="m-0">
+        <Container>
           <Navbar.Brand href="#home">
             <img
               src={logo}
@@ -18,40 +27,42 @@ export default function NavigationBar() {
               alt="Logo"
             />
           </Navbar.Brand>
-          <Navbar.Collapse
-            className="d-flex justify-content-center"
-            id="basic-navbar-nav"
-          >
-            <Nav className="d-flex">
-              <Nav.Link className="nav-item active" href="#home">
-                Home
-              </Nav.Link>
-              <Nav.Link className="nav-item" href="#about-us">
-                About Us
-              </Nav.Link>
-              <NavDropdown
-                className="nav-item text"
-                title="Services"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">
-                  Web Development
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Mobile Development
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  System Development
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link className="nav-item" href="#link">
-                Blog
-              </Nav.Link>
-              <Nav.Link className="nav-item" href="#link">
-                FAQ
-              </Nav.Link>
+
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav>
+              <Stack direction="horizontal" gap={5}>
+                <Nav.Link className="nav-item active" href="#home">
+                  Home
+                </Nav.Link>
+                <Nav.Link className="nav-item" href="#about-us">
+                  About Us
+                </Nav.Link>
+                <NavDropdown
+                  className="nav-item text"
+                  title="Services"
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="#action/3.1">
+                    Web Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Mobile Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    System Development
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link className="nav-item" href="#link">
+                  Blog
+                </Nav.Link>
+                <Nav.Link className="nav-item" href="#link">
+                  FAQ
+                </Nav.Link>
+              </Stack>
             </Nav>
           </Navbar.Collapse>
+
           <Button
             href="https://wa.me/6282138754680"
             target="_blank"
@@ -59,7 +70,7 @@ export default function NavigationBar() {
             variant="primary"
           >
             Get in touch
-          </Button>{' '}
+          </Button>
         </Container>
       </Navbar>
     </>

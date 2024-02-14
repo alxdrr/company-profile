@@ -21,10 +21,18 @@ $theme-colors: (
   'dark': $dark,
 );
 
+.accordion,
+.accordion-header {
+  width: 100% !important;
+}
+
 /* import bootstrap to set changes */
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+#NavigationBar {
+  padding-top: 32px;
+}
 .nav-item {
   color: #ffffff !important;
   font-weight: 400;
@@ -47,10 +55,6 @@ $theme-colors: (
   font-weight: 700;
 }
 
-.navbar-nav {
-  gap: 28px;
-}
-
 #basic-nav-dropdown {
   color: #ffffff !important;
 }
@@ -58,8 +62,13 @@ $theme-colors: (
   color: #d64a23e1 !important;
 }
 
-nav {
-  padding: 16px 0 !important;
-  padding-top: 24px !important;
-  height: auto;
+.row {
+  width: 100% !important;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }

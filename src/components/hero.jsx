@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <>
-      <div className="Hero bg-secondary">
+    <div className="bg-secondary">
+      <div className="container   Hero">
         <motion.div
           layout
           transition={{ duration: 1, type: 'spring', bounce: 0.5 }}
@@ -32,6 +32,6 @@ export default function Hero() {
         </motion.div>
         <img className="hero-ornament" src={ornament} alt="" />
       </div>
-    </>
+    </div>
   );
 }

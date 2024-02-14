@@ -10,8 +10,8 @@ const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
 export default function Footer() {
   return (
-    <>
-      <div className="footer bg-dark">
+    <div className='bg-dark'>
+      <div className="container footer bg-dark">
         <div className="element">
           <div className="links">
             <div className="social d-flex flex-column">
@@ -121,6 +121,6 @@ export default function Footer() {
           src={up}
         />
       </div>
-    </>
+    </div>
   );
 }

@@ -6,7 +6,10 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <>
-      <div id="about-us" className="about bg-light">
+      <div
+        id="about-us"
+        className="container d-flex justify-content-center about bg-light"
+      >
         <motion.div
           layout
           transition={{ duration: 1 }}

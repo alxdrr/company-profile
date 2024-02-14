@@ -40,7 +40,7 @@ const servicesProvided = [
 export default function Services() {
   return (
     <>
-      <div id="our-services" className="services d-flex flex-column">
+      <div id="our-services" className="container services d-flex flex-column">
         <motion.div
           variants={componentsAnimation}
           initial="initial"
@@ -83,3 +83,4 @@ export default function Services() {
     </>
   );
 }
+

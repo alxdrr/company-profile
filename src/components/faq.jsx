@@ -4,7 +4,7 @@ import '../style/faq.css';
 
 function Faq() {
   return (
-    <div className="faq-section d-flex flex-row">
+    <div className="container d-flex justify-content-center faq-section d-flex flex-row">
       <Figure.Image src={faqImg} width={400} height={180} alt="" />
       <div className="faq">
         <div className="faq-copy">

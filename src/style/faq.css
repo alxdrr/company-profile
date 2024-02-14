@@ -1,9 +1,9 @@
 .faq-section {
   padding: 64px 72px;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 64px;
-  align-self: stretch;
+  max-width: 1920px;
+  width: 100%;
 }
 
 .faq {
@@ -43,4 +43,8 @@
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
+}
+
+.accordion {
+  z-index: 1000;
 }
