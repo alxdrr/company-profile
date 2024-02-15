@@ -19,5 +19,5 @@ function App() {
 }
 
 export default App;
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './custom.scss';
+// import 'bootstrap/dist/css/bootstrap.min.css';

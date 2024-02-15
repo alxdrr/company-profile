@@ -1,5 +1,3 @@
-@import '../custom.scss';
-
 .Hero {
   height: 88vh;
   display: flex;
@@ -8,8 +6,9 @@
   align-items: center;
   max-width: 1920px;
   position: relative;
+  width: auto;
 }
-.copy {
+.hero-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -23,10 +22,10 @@
 
 .hero-desc {
   text-align: justify;
-  max-width: 60vw;
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
+  width: auto;
 }
 
 .hero-ornament {

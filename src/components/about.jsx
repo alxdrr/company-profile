@@ -6,17 +6,14 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <>
-      <div
-        id="about-us"
-        className="container d-flex justify-content-center about bg-light"
-      >
+      <div id="about-us" className=" container d-flex about bg-light">
         <motion.div
           layout
           transition={{ duration: 1 }}
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="copy"
+          className="about-copy"
         >
           <h1 className="about-header text-dark">
             Unlock Your Development Potential with Us
@@ -37,7 +34,7 @@ export default function About() {
           </Button>{' '}
         </motion.div>
         <motion.img
-          layout
+          fluid
           transition={{ duration: 1 }}
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}

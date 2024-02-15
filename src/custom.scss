@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inter:wght@700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,100&display=swap');
 * {
   font-family: 'SATOSHI';
 }
-/* make the customizations */
+/* make the customizations VARIABLE ONLY */
 $primary: #d64923;
 $secondary: #002029;
 $sucess: #42ff00;
@@ -21,17 +20,47 @@ $theme-colors: (
   'dark': $dark,
 );
 
-.accordion,
-.accordion-header {
-  width: 100% !important;
-}
-
 /* import bootstrap to set changes */
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+// make components customization
+.accordion,
+.accordion-header {
+  width: 100% !important;
+  --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+  --bs-accordion-border-color: #aeaeae;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fffcbd;
+}
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none !important;
+}
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: $primary;
+  background-color: none;
+  border: 1px solid $light;
+}
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  background-color: $primary;
+  box-shadow: none;
+}
+
 #NavigationBar {
   padding-top: 32px;
+  min-height: 12vh;
+  width: 100%;
 }
 .nav-item {
   color: #ffffff !important;
@@ -71,4 +100,28 @@ $theme-colors: (
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding: 0 16px;
+}
+
+/* Tablet (ukuran font yang sedikit lebih kecil daripada desktop) */
+@media (max-width: 767px) {
+  .hero-header {
+    font-size: 4rem; /* Contoh ukuran font untuk tablet */
+  }
+
+  .hero-desc {
+    font-size: 1.5rem; /* Contoh ukuran font untuk tablet */
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-header {
+    font-size: 2.5rem; /* Contoh ukuran font untuk mobile */
+  }
+
+  .hero-desc {
+    font-size: 1.2rem; /* Contoh ukuran font untuk tablet */
+    text-align: left;
+    /* Contoh ukuran font untuk mobile */
+  }
 }
