@@ -26,7 +26,8 @@ $theme-colors: (
 
 // make components customization
 .accordion,
-.accordion-header {
+.accordion-header,
+.accordion-button {
   width: 100% !important;
   --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
   --bs-accordion-border-color: #aeaeae;
@@ -104,24 +105,77 @@ $theme-colors: (
 }
 
 /* Tablet (ukuran font yang sedikit lebih kecil daripada desktop) */
-@media (max-width: 767px) {
-  .hero-header {
-    font-size: 4rem; /* Contoh ukuran font untuk tablet */
+@media (max-width: 1023px) {
+  .hero-header,
+  .about-header,
+  .services-header,
+  .faq-header {
+    font-size: 3.75rem; /* Contoh ukuran font untuk tablet */
   }
 
-  .hero-desc {
-    font-size: 1.5rem; /* Contoh ukuran font untuk tablet */
+  .hero-desc,
+  .services-desc,
+  .card-desc,
+  .faq-desc,
+  .accordion-button,
+  .accordion-body,
+  .about-desc {
+    font-size: 1rem; /* Contoh ukuran font untuk tablet */
+  }
+
+  .hero-copy {
+    gap: 16px;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .hero-header {
     font-size: 2.5rem; /* Contoh ukuran font untuk mobile */
   }
 
-  .hero-desc {
-    font-size: 1.2rem; /* Contoh ukuran font untuk tablet */
+  .about-header,
+  .services-header,
+  .faq-header {
+    font-size: 2rem;
+  }
+
+  .hero-desc,
+  .services-desc,
+  .card-desc,
+  .faq-desc,
+  .accordion-button,
+  .accordion-body,
+  .about-desc {
+    font-size: 0.75rem; /* Contoh ukuran font untuk tablet */
     text-align: left;
+    font-weight: 400;
     /* Contoh ukuran font untuk mobile */
+  }
+
+  .direct,
+  .contact,
+  .office,
+  .copyright {
+    font-size: 0.8rem;
+  }
+
+  .navigator {
+    margin-bottom: 4px;
+  }
+
+  .element {
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links {
+    justify-content: space-around;
+  }
+
+  .img-up {
+    scale: 0.7;
+    bottom: 16px;
+    right: 16px;
   }
 }

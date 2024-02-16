@@ -4,6 +4,8 @@
   gap: 64px;
   max-width: 1920px;
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .faq {
@@ -11,8 +13,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 64px;
-  flex: 1 0 0;
+  gap: 32px;
+  width: 100%;
 }
 .faq-copy {
   display: flex;
@@ -28,8 +30,10 @@
   font-weight: 900;
   line-height: normal;
 }
-
-.faq-desc {
+.faq-img {
+  max-width: 180px;
+}
+x .faq-desc {
   color: #002029;
   font-feature-settings: 'calt' off;
   font-size: 20px;
@@ -42,7 +46,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  align-self: stretch;
+  width: 100%;
 }
 
 .accordion {

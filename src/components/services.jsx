@@ -53,7 +53,7 @@ export default function Services() {
             We offer comprehensive web, mobile, and system development services.
           </p>
         </motion.div>
-        <div className="services-card">
+        <div className="services-card d-flex flex-row">
           {servicesProvided.map((service, index) => (
             <motion.div
               variants={componentsAnimation}
@@ -83,4 +83,3 @@ export default function Services() {
     </>
   );
 }
-

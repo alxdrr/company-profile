@@ -101,6 +101,7 @@ export default function Footer() {
           © 2024 Kori Barak Technology, All Rights Reserved.
         </p>
         <motion.img
+        className='img-up'
           onClick={scrollTop}
           animate={{
             scale: [1, 0.9, 1],

@@ -4,16 +4,18 @@
   background: #ffffff;
   justify-content: center;
   max-width: 1920px;
+  width: 100%;
 }
 .services-card {
-  display: flex;
   align-items: flex-start;
   gap: 48px;
-  align-self: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
 .services-copy {
   display: flex;
-  width: auto;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -62,6 +64,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
+  max-width: 320px;
 }
 .btn-services {
   display: flex;
