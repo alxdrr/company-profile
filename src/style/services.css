@@ -8,10 +8,10 @@
 }
 .services-card {
   align-items: flex-start;
-  gap: 48px;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  gap: 16px;
 }
 .services-copy {
   display: flex;

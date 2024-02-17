@@ -7,7 +7,7 @@ import {
   Stack,
 } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo2.svg';
 
 export default function NavigationBar() {
   const [direction, setDirection] = useState(
@@ -33,7 +33,7 @@ export default function NavigationBar() {
         id="NavigationBar"
         expand="lg"
         collapseOnSelect
-        className="bg-secondary"
+        className="bg-light"
       >
         <Container>
           <Navbar.Brand href="#home">
@@ -46,18 +46,27 @@ export default function NavigationBar() {
             />
           </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="navToggler"
+          />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
               <Stack direction={direction} gap={5}>
-                <Nav.Link className="nav-item m-auto active" href="#home">
+                <Nav.Link
+                  className="nav-item m-auto text-secondary"
+                  href="/"
+                >
                   Home
                 </Nav.Link>
-                <Nav.Link className="nav-item m-auto" href="#about-us">
+                <Nav.Link
+                  className="nav-item m-auto text-secondary"
+                  href="#about-us"
+                >
                   About Us
                 </Nav.Link>
                 <NavDropdown
-                  className="nav-item m-auto"
+                  className="nav-item m-auto text-secondary navDrop"
                   title="Services"
                   id="basic-nav-dropdown"
                 >
@@ -71,10 +80,16 @@ export default function NavigationBar() {
                     System Development
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link className="nav-item m-auto" href="services">
+                <Nav.Link
+                  className="nav-item m-auto text-secondary"
+                  href="services"
+                >
                   Blog
                 </Nav.Link>
-                <Nav.Link className="nav-item m-auto" href="services">
+                <Nav.Link
+                  className="nav-item m-auto text-secondary"
+                  href="services"
+                >
                   FAQ
                 </Nav.Link>
               </Stack>

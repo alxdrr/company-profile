@@ -15,6 +15,7 @@
   align-items: flex-start;
   gap: 32px;
 }
+
 .hero-header {
   font-size: 72px;
   font-weight: 900;
@@ -33,4 +34,11 @@
   position: absolute;
   right: 0px;
   bottom: 0px;
+}
+
+.hero-ornament2 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transform: scaleX(-1);
 }

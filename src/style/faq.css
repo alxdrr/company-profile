@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
-  width: 100%;
+  width: 70%;
 }
 .faq-copy {
   display: flex;
@@ -31,9 +31,9 @@
   line-height: normal;
 }
 .faq-img {
-  max-width: 180px;
+  max-width: 360px;
 }
-x .faq-desc {
+.faq-desc {
   color: #002029;
   font-feature-settings: 'calt' off;
   font-size: 20px;
