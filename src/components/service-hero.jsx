@@ -27,7 +27,7 @@ export default function Hero() {
             Discover how our expertise and dedication can transform your ideas
             into impactful realities.
           </p>
-          <Button className="text-center" href="#about-us" variant="primary">
+          <Button className="text-center" href="#services" variant="primary">
             Explore
           </Button>{' '}
         </motion.div>

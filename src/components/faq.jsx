@@ -1,11 +1,9 @@
-import { Accordion, Image } from 'react-bootstrap';
-import faqImg from '../assets/faq.png';
+import { Accordion } from 'react-bootstrap';
 import '../style/faq.css';
 
 function Faq() {
   return (
     <div className="container d-flex justify-content-center faq-section d-flex flex-row">
-      <Image src={faqImg} alt="" className="faq-img" />
       <div className="faq">
         <div className="faq-copy">
           <h1 className="faq-header">FAQ</h1>

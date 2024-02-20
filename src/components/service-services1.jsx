@@ -1,74 +1,236 @@
-import { Button, Stack } from 'react-bootstrap';
+import { Stack } from 'react-bootstrap';
 import '../style/about.css';
 import imageWeb from '../assets/web-asset.svg';
+import imageMobile from '../assets/mob-asset.svg';
+import imageSystem from '../assets/system-asset.svg';
 import { motion } from 'framer-motion';
 
 export default function About() {
   return (
     <>
-      <div id="about-us" className=" container d-flex about bg-light">
-        <motion.div
-          layout
-          transition={{ duration: 1 }}
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="about-copy"
+      <div id="services" className=" container d-flex about bg-light">
+        <Stack
+          direction="horizontal"
+          className=" container d-flex about bg-light"
         >
-          <h1 className="about-header text-dark">Website Development</h1>
-          <p className="about-desc text-dark">
-            Elevate your online presence with our bespoke web development
-            solutions. Our team of expert developers crafts visually stunning
-            and user-friendly websites tailored to your unique business needs.
-            From responsive designs to seamless user experiences, we ensure that
-            your website stands out in the digital landscape.
-          </p>
-          <Stack gap={3}>
-            <h2 className="heading-2 text-primary">
-              Highlight Features
-            </h2>
-            <Stack
-              gap={3}
-              direction="horizontal"
-              className="justify-conter-center"
-            >
-              <i
-                className="fa-solid fa-user fa-2xl"
-                style={{ color: '#D64923' }}
-              ></i>
-              <p className="about-desc mb-0">User Friendly</p>
-            </Stack>
-            <Stack
-              gap={3}
-              direction="horizontal"
-              className="justify-conter-center"
-            >
-              <i
-                className="fa-brands fa-searchengin fa-2xl"
-                style={{ color: '#D64923' }}
-              ></i>
-              <p className="about-desc mb-0">SEO Optimizaion</p>
-            </Stack>
-          </Stack>
-          <Button
-            href="https://wa.me/6282138754680"
-            target="_blank"
-            rel="noreferrer"
-            variant="primary"
+          <motion.div
+            layout
+            transition={{ duration: 1 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="about-copy"
+            style={{ gap: 12 }}
           >
-            Contact Us
-          </Button>{' '}
-        </motion.div>
-        <motion.img
-          fluid
-          transition={{ duration: 1 }}
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="about-image"
-          src={imageWeb}
-          alt=""
-        />
+            <h1 className="about-header text-dark mb-3">Website Development</h1>
+            <p className="about-desc text-dark">
+              Our website development service offers comprehensive solutions,
+              leveraging cutting-edge technologies to create high-performance
+              and visually appealing websites tailored to meet your specific
+              needs.
+            </p>
+            <Stack
+              direction="horizontal"
+              gap={3}
+              className="justify-content-start align-items-start"
+            >
+              <i className="fa-solid fa-circle-check text-primary fa-2xl pt-3"></i>
+              <Stack direction="vertical" gap={2}>
+                <h2>Next.js 13</h2>
+                <p className="about-desc">
+                  Utilizing Next.js for server-side rendering to enhance
+                  performance and SEO.
+                </p>
+              </Stack>
+            </Stack>
+            <Stack
+              direction="horizontal"
+              gap={3}
+              className="justify-content-start align-items-start"
+            >
+              <i className="fa-solid fa-circle-check text-primary fa-2xl pt-3"></i>
+              <Stack direction="vertical" gap={2}>
+                <h2>Chakra UI</h2>
+                <p className="about-desc">
+                  Employing Chakra UI for streamlined and customizable React
+                  components.
+                </p>
+              </Stack>
+            </Stack>
+            <Stack
+              direction="horizontal"
+              gap={3}
+              className="justify-content-start align-items-start"
+            >
+              <i className="fa-solid fa-circle-check text-primary fa-2xl pt-3"></i>
+              <Stack direction="vertical" gap={2}>
+                <h2>Context Pattern</h2>
+                <p className="about-desc">
+                  Opting for the lightweight Context API over Redux for global
+                  state management, reducing complexity.
+                </p>
+              </Stack>
+            </Stack>
+          </motion.div>
+          <motion.img
+            fluid
+            transition={{ duration: 1 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="about-image"
+            src={imageWeb}
+            alt=""
+          />
+        </Stack>
+        <Stack
+          direction="horizontal"
+          className=" container d-flex about bg-light"
+        >
+          <motion.img
+            fluid
+            transition={{ duration: 1 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="about-image"
+            src={imageMobile}
+            alt=""
+          />
+          <motion.div
+            layout
+            transition={{ duration: 1 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="about-copy"
+            style={{ gap: 12 }}
+          >
+            <h1 className="about-header text-dark mb-3">Mobile Development</h1>
+            <p className="about-desc text-dark">
+              Our website development service offers comprehensive solutions,
+              leveraging cutting-edge technologies to create high-performance
+              and visually appealing websites tailored to meet your specific
+              needs.
+            </p>
+            <Stack
+              direction="horizontal"
+              gap={3}
+              className="justify-content-start align-items-start"
+            >
+              <i className="fa-solid fa-circle-check text-primary fa-2xl pt-3"></i>
+              <Stack direction="vertical" gap={2}>
+                <h2>Next.js 13</h2>
+                <p className="about-desc">
+                  Utilizing Next.js for server-side rendering to enhance
+                  performance and SEO.
+                </p>
+              </Stack>
+            </Stack>
+            <Stack
+              direction="horizontal"
+              gap={3}
+              className="justify-content-start align-items-start"
+            >
+              <i className="fa-solid fa-circle-check text-primary fa-2xl pt-3"></i>
+              <Stack direction="vertical" gap={2}>
+                <h2>Chakra UI</h2>
+                <p className="about-desc">
+                  Employing Chakra UI for streamlined and customizable React
+                  components.
+                </p>
+              </Stack>
+            </Stack>
+            <Stack
+              direction="horizontal"
+              gap={3}
+              className="justify-content-start align-items-start"
+            >
+              <i className="fa-solid fa-circle-check text-primary fa-2xl pt-3"></i>
+              <Stack direction="vertical" gap={2}>
+                <h2>Context Pattern</h2>
+                <p className="about-desc">
+                  Opting for the lightweight Context API over Redux for global
+                  state management, reducing complexity.
+                </p>
+              </Stack>
+            </Stack>
+          </motion.div>
+        </Stack>
+        <Stack
+          direction="horizontal"
+          className=" container d-flex about bg-light"
+        >
+          <motion.div
+            layout
+            transition={{ duration: 1 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="about-copy"
+            style={{ gap: 12 }}
+          >
+            <h1 className="about-header text-dark mb-3">System Development</h1>
+            <p className="about-desc text-dark">
+              Our website development service offers comprehensive solutions,
+              leveraging cutting-edge technologies to create high-performance
+              and visually appealing websites tailored to meet your specific
+              needs.
+            </p>
+            <Stack
+              direction="horizontal"
+              gap={3}
+              className="justify-content-start align-items-start"
+            >
+              <i className="fa-solid fa-circle-check text-primary fa-2xl pt-3"></i>
+              <Stack direction="vertical" gap={2}>
+                <h2>Next.js 13</h2>
+                <p className="about-desc">
+                  Utilizing Next.js for server-side rendering to enhance
+                  performance and SEO.
+                </p>
+              </Stack>
+            </Stack>
+            <Stack
+              direction="horizontal"
+              gap={3}
+              className="justify-content-start align-items-start"
+            >
+              <i className="fa-solid fa-circle-check text-primary fa-2xl pt-3"></i>
+              <Stack direction="vertical" gap={2}>
+                <h2>Chakra UI</h2>
+                <p className="about-desc">
+                  Employing Chakra UI for streamlined and customizable React
+                  components.
+                </p>
+              </Stack>
+            </Stack>
+            <Stack
+              direction="horizontal"
+              gap={3}
+              className="justify-content-start align-items-start"
+            >
+              <i className="fa-solid fa-circle-check text-primary fa-2xl pt-3"></i>
+              <Stack direction="vertical" gap={2}>
+                <h2>Context Pattern</h2>
+                <p className="about-desc">
+                  Opting for the lightweight Context API over Redux for global
+                  state management, reducing complexity.
+                </p>
+              </Stack>
+            </Stack>
+          </motion.div>
+          <motion.img
+            fluid
+            transition={{ duration: 1 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="about-image"
+            src={imageSystem}
+            alt=""
+          />
+        </Stack>
       </div>
     </>
   );
