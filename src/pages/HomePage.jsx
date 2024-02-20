@@ -2,7 +2,9 @@ import NavigationBar from '../components/navbar.jsx';
 import Hero from '../components/hero.jsx';
 import About from '../components/about.jsx';
 import Services from '../components/services.jsx';
-import Footer from '../components/footer.jsx';
+// import Footer from '../components/footer.jsx';
+import Footer from '../components/footer-2.jsx';
+
 import Faq from '../components/faq.jsx';
 
 function App() {

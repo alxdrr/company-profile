@@ -158,6 +158,10 @@ $theme-colors: (
   .hero-copy {
     gap: 16px;
   }
+  .links {
+    gap: 32px 128px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -191,22 +195,26 @@ $theme-colors: (
   .direct,
   .contact,
   .office,
-  .copyright {
+  .copyright,
+  .tag {
     font-size: 0.8rem;
+    gap: 16px;
   }
 
   .navigator {
     margin-bottom: 4px;
+    font-size: 1rem;
   }
 
   .element {
-    gap: 16px;
     justify-content: center;
     align-items: center;
+    padding: 32px;
   }
 
   .links {
-    justify-content: space-around;
+    gap: 32px 32px;
+    // justify-content: space-around;
   }
 
   .img-up {
