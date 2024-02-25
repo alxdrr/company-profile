@@ -5,4 +5,15 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/",
+  build: {
+    outDir: "dist",
+    rollupOptions: {
+      input: {
+        main: "./src/main.jsx",
+        page1: "./src/pages/HomePage.jsx",
+        page2: "./src/pages/ServicePage.jsx",
+        // Tambahkan halaman lainnya sesuai kebutuhan
+      },
+    },
+  },
 });
