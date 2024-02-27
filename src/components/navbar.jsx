@@ -71,10 +71,10 @@ export default function NavigationBar() {
                     System Development
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link className="nav-item m-auto" href="services">
+                <Nav.Link className="nav-item m-auto" href="blog">
                   Blog
                 </Nav.Link>
-                <Nav.Link className="nav-item m-auto" href="services">
+                <Nav.Link className="nav-item m-auto" href="faq">
                   FAQ
                 </Nav.Link>
               </Stack>
