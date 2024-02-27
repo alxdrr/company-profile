@@ -162,6 +162,10 @@ $theme-colors: (
     gap: 32px 128px;
     margin: auto;
   }
+
+  .faq-image {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {

@@ -31,7 +31,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="w"
+          className="faq-image"
           src={image}
           alt=""
         />
