@@ -13,6 +13,28 @@ export default function NavigationBar() {
   const [direction, setDirection] = useState(
     window.innerWidth < 991 ? 'vertical' : 'horizontal',
   );
+  const [path, setPath] = useState('');
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    const pathParts = currentPath.split('/');
+    const currentPage = pathParts[pathParts.length - 1];
+    setPath(currentPage);
+  }, []);
+
+  useEffect(() => {
+    let active = '';
+    if (path === 'faq') {
+      active = document.querySelector('#faq');
+    } else if (path === 'blog') {
+      active = document.querySelector('#blog');
+    } else if (path === 'services') {
+      active = document.querySelector('#basic-nav-dropdown');
+    }
+
+    if (active) {
+      active.classList.add('active');
+    }
+  }, [path]);
 
   // Menggunakan useEffect untuk menambahkan event listener saat komponen dimuat
   useEffect(() => {
@@ -54,14 +76,16 @@ export default function NavigationBar() {
             <Nav>
               <Stack direction={direction} gap={5}>
                 <Nav.Link
+                  id="Home"
                   className="nav-item m-auto text-secondary"
                   href="/"
                 >
                   Home
                 </Nav.Link>
                 <Nav.Link
+                  id="about"
                   className="nav-item m-auto text-secondary"
-                  href="#about-us"
+                  href="/#about-us"
                 >
                   About Us
                 </Nav.Link>
@@ -81,14 +105,16 @@ export default function NavigationBar() {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link
+                  id="blog"
                   className="nav-item m-auto text-secondary"
-                  href="services"
+                  href="blog"
                 >
                   Blog
                 </Nav.Link>
                 <Nav.Link
+                  id="faq"
                   className="nav-item m-auto text-secondary"
-                  href="services"
+                  href="faq"
                 >
                   FAQ
                 </Nav.Link>
