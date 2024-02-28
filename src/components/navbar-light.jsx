@@ -6,6 +6,7 @@ import {
   Button,
   Stack,
 } from 'react-bootstrap';
+
 import { useState, useEffect } from 'react';
 import logo from '../assets/logo2.svg';
 
@@ -27,8 +28,6 @@ export default function NavigationBar() {
       active = document.querySelector('#faq');
     } else if (path === 'blog') {
       active = document.querySelector('#blog');
-    } else if (path === 'services') {
-      active = document.querySelector('#basic-nav-dropdown');
     }
 
     if (active) {
@@ -52,6 +51,7 @@ export default function NavigationBar() {
   return (
     <>
       <Navbar
+        sticky="top"
         id="NavigationBar"
         expand="lg"
         collapseOnSelect
@@ -73,7 +73,7 @@ export default function NavigationBar() {
             className="navToggler"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav>
+            <Nav variant="underline">
               <Stack direction={direction} gap={5}>
                 <Nav.Link
                   id="Home"

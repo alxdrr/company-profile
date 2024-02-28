@@ -48,9 +48,9 @@ export default function NavigationBar() {
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav>
+            <Nav variant="underline" >
               <Stack direction={direction} gap={5}>
-                <Nav.Link className="nav-item m-auto active" href="#home">
+                <Nav.Link className="nav-item m-auto" href="#home">
                   Home
                 </Nav.Link>
                 <Nav.Link className="nav-item m-auto" href="#about-us">
