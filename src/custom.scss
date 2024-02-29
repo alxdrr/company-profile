@@ -32,6 +32,7 @@ $theme-colors: (
 .accordion,
 .accordion-header,
 .accordion-button {
+  font-size: 1.2rem;
   width: 100% !important;
   --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
   --bs-accordion-border-color: #aeaeae;
@@ -150,7 +151,7 @@ $theme-colors: (
   .accordion-button,
   .accordion-body,
   .about-desc {
-    font-size: 1rem; /* Contoh ukuran font untuk tablet */
+    font-size: 2rem; /* Contoh ukuran font untuk tablet */
   }
   .faq {
     width: 100%;

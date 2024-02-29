@@ -27,7 +27,7 @@ function Faq() {
         >
           <Accordion defaultActiveKey="">
             <Accordion.Item eventKey="0">
-              <Accordion.Header style={{ fontSize: '90px' }}>
+              <Accordion.Header >
                 What kind of businesses can benefit from your software
                 development services?
               </Accordion.Header>
