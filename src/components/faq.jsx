@@ -1,20 +1,33 @@
 import { Accordion } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import '../style/faq.css';
 
 function Faq() {
   return (
     <div className="container d-flex justify-content-center faq-section d-flex flex-row">
       <div className="faq">
-        <div className="faq-copy">
+        <motion.div
+          initial={{ opacity: 0, y: -150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="faq-copy"
+        >
           <h1 className="faq-header">FAQ</h1>
           <p className="faq-desc">
             Find answers to common questions about our services and processes.
           </p>
-        </div>
-        <div className="faq-qna">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
+          viewport={{ once: true }}
+          className="faq-qna"
+        >
           <Accordion defaultActiveKey="">
             <Accordion.Item eventKey="0">
-              <Accordion.Header>
+              <Accordion.Header style={{ fontSize: '90px' }}>
                 What kind of businesses can benefit from your software
                 development services?
               </Accordion.Header>
@@ -67,7 +80,7 @@ function Faq() {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
