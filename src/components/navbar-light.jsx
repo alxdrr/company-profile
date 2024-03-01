@@ -51,7 +51,6 @@ export default function NavigationBar() {
   return (
     <>
       <Navbar
-        sticky="top"
         id="NavigationBar"
         expand="lg"
         collapseOnSelect
