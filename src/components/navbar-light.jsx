@@ -104,13 +104,7 @@ export default function NavigationBar() {
                     System Development
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link
-                  id="blog"
-                  className="nav-item m-auto text-secondary"
-                  href="blog"
-                >
-                  Blog
-                </Nav.Link>
+
                 <Nav.Link
                   id="faq"
                   className="nav-item m-auto text-secondary"

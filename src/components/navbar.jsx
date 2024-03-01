@@ -30,6 +30,7 @@ export default function NavigationBar() {
   return (
     <>
       <Navbar
+        sticky="top"
         id="NavigationBar"
         expand="lg"
         collapseOnSelect
@@ -48,7 +49,7 @@ export default function NavigationBar() {
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav variant="underline" >
+            <Nav variant="underline">
               <Stack direction={direction} gap={5}>
                 <Nav.Link className="nav-item m-auto" href="#home">
                   Home
@@ -71,9 +72,6 @@ export default function NavigationBar() {
                     System Development
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link className="nav-item m-auto" href="blog">
-                  Blog
-                </Nav.Link>
                 <Nav.Link className="nav-item m-auto" href="faq">
                   FAQ
                 </Nav.Link>
