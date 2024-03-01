@@ -69,13 +69,15 @@ export default function Services() {
                 <h2 className="headers text-primary">{service.name}</h2>
               </div>
               <p className="card-desc">{service.desc}</p>
-              <motion.button
+              <motion.a
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}
                 className="btn-services"
+                href="/services"
+                style={{ textDecoration: 'none' }}
               >
                 Learn More <img src={right} alt="" />
-              </motion.button>
+              </motion.a>
             </motion.div>
           ))}
         </div>
