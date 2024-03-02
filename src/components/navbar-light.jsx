@@ -72,7 +72,7 @@ export default function NavigationBar() {
             className="navToggler"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav variant="underline">
+            <Nav>
               <Stack direction={direction} gap={5}>
                 <Nav.Link
                   id="Home"
