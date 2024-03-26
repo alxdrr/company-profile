@@ -59,10 +59,10 @@ export default function Footer() {
                   +62 821-3875-4680
                 </a>
                 <a
-                  href="mailto:koribaraktechnology@gmail.com"
+                  href="mailto:forcomstechnology@gmail.com"
                   className="text-light contact"
                 >
-                  koribaraktechnology@gmail.com
+                  forcomstechnology@gmail.com
                 </a>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
           <div className="brand">
             <h2 className="tag ">Digital Dreams, Real Results</h2>
-            <a href="https://www.koribaraktechnology.com">
+            <a href="https://www.forcoms.com">
               <img className="brand-logo" src={brand} alt="Brand" />
             </a>
           </div>

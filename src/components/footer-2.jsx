@@ -61,10 +61,10 @@ export default function Footer() {
                     +62 821-3875-4680
                   </a>
                   <a
-                    href="mailto:koribaraktechnology@gmail.com"
+                    href="mailto:forcomstechnologyy@gmail.com"
                     className="text-light contact"
                   >
-                    koribaraktechnology@gmail.com
+                    forcomstechnology@gmail.com
                   </a>
                 </div>
               </div>
@@ -88,14 +88,14 @@ export default function Footer() {
             </div>
             <div className="brand">
               <h2 className="tag ">High-Quality Technology Solutions</h2>
-              <a href="https://www.koribaraktechnology.com">
+              <a href="https://www.forcoms.com" className="mt-5">
                 <img className="brand-logo" src={brand} alt="Brand" />
               </a>
             </div>
           </div>
         </Stack>
         <p className="copyright text-light">
-          © 2024 Kori Barak Technology, All Rights Reserved.
+          © 2024 Forcoms, All Rights Reserved.
         </p>
         <img className="footer-ornament" src={ornament} alt="" />
         <motion.img
