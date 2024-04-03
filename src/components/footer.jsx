@@ -10,7 +10,7 @@ const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
 export default function Footer() {
   return (
-    <div className='bg-dark'>
+    <div className="bg-dark">
       <div className="container footer bg-dark">
         <div className="element">
           <div className="links">
@@ -79,7 +79,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="brand">
-            <h2 className="tag ">Digital Dreams, Real Results</h2>
+            <h2 className="tag ">Innovate for Growth</h2>
             <a href="https://www.forcoms.com">
               <img className="brand-logo" src={brand} alt="Brand" />
             </a>
@@ -101,7 +101,7 @@ export default function Footer() {
           © 2024 Kori Barak Technology, All Rights Reserved.
         </p>
         <motion.img
-        className='img-up'
+          className="img-up"
           onClick={scrollTop}
           animate={{
             scale: [1, 0.9, 1],

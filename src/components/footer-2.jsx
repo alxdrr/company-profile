@@ -87,7 +87,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="brand">
-              <h2 className="tag ">High-Quality Technology Solutions</h2>
+              <h2 className="tag ">Innovate for Growth</h2>
               <a href="https://www.forcoms.com" className="mt-5">
                 <img className="brand-logo" src={brand} alt="Brand" />
               </a>
