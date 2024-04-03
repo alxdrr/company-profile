@@ -143,7 +143,9 @@ $theme-colors: (
   .faq-header {
     font-size: 3.75rem; /* Contoh ukuran font untuk tablet */
   }
-
+  .portfolio-text {
+    font-size: 2rem !important;
+  }
   .hero-desc,
   .services-desc,
   .card-desc,
@@ -179,7 +181,9 @@ $theme-colors: (
   .faq-header {
     font-size: 2rem;
   }
-
+  .project-type {
+    color: #002029 !important;
+  }
   .faq-img {
     max-width: 180px;
   }
